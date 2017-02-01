@@ -1,0 +1,11 @@
+image: node
+before_script:
+  - npm install -g bower
+  - npm install -g grunt-cli
+  - npm install
+  - bower install --allow-root
+test:
+  script: 
+    - grunt test:full
+  cache:
+    untracked: true

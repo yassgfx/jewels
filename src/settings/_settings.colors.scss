@@ -1,0 +1,9 @@
+$red: ( base: #f44336, light-400: #ef5350, light-300: #e57373, light-200: #ef9a9a, light-100: #ffcdd2, light-50: #ffebee, dark-600: #e53935, dark-700: #d32f2f, dark-800: #c62828, dark-900: #b71c1c, );
+$pink: ( base: #e91e63, light-400: #ec407a, light-300: #f06292, light-200: #f48fb1, light-100: #f8bbd0, light-50: #fce4ec, dark-600: #d81b60, dark-700: #c2185b, dark-800: #ad1457, dark-900: #880e4f, );
+$purple: ( base: #9c27b0, light-400: #ab47bc, light-300: #ba68c8, light-200: #ce93d8, light-100: #e1bee7, light-50: #f3e5f5, dark-600: #8e24aa, dark-700: #7b1fa2, dark-800: #6a1b9a, dark-900: #4a148c, );
+$indigo: ( base: #3f51b5, light-400: #5c6bc0, light-300: #7986cb, light-200: #9fa8da, light-100: #c5cae9, light-50: #e8eaf6, dark-600: #3949ab, dark-700: #303f9f, dark-800: #283593, dark-900: #1a237e, );
+$blue: ( base: #2196f3, light-400: #42a5f5, light-300: #64b5f6, light-200: #90caf9, light-100: #bbdefb, light-50: #e3f2fd, dark-600: #1e88e5, dark-700: #1976d2, dark-800: #1565c0, dark-900: #0d47a1, );
+$light-blue: ( base: #03a9f4, light-400: #29b6f6, light-300: #4fc3f7, light-200: #81d4fa, light-100: #b3e5fc, light-50: #e1f5fe, dark-600: #039be5, dark-700: #0288d1, dark-800: #0277bd, dark-900: #01579b, );
+$cyan: ( base: #00bcd4, light-400: #26c6da, light-300: #4dd0e1, light-200: #80deea, light-100: #b2ebf2, light-50: #e0f7fa, dark-600: #00acc1, dark-700: #0097a7, dark-800: #00838f, dark-900: #006064, );
+$teal: ( base: #009688, light-400: #26a69a, light-300: #4db6ac, light-200: #80cbc4, light-100: #b2dfdb, light-50: #e0f2f1, dark-600: #00897b, dark-700: #00796b, dark-800: #00695c, dark-900: #004d40, );
+$colors: ( red: $red, pink: $pink, purple: $purple, indigo: $indigo, blue: $blue, light-blue: $light-blue, cyan: $cyan, teal: $teal);

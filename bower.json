@@ -1,0 +1,15 @@
+{
+    "name": "Jewels Css",
+    "description": "A Modern CSS Framework",
+    "keywords": [],
+    "author": "Jewels",
+    "license": "UNLICENSED",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JewelsCss/jewels"
+    },
+    "dependencies": {
+        "jquery": "*"
+    },
+    "devDependencies": {}
+}

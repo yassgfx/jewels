@@ -1,0 +1,66 @@
+@function color($color, $type) {
+    @if map-has-key($colors, $color) {
+        $curr_color: map-get($colors, $color);
+        @if map-has-key($curr_color, $type) {
+            @return map-get($curr_color, $type);
+        }
+    }
+    @warn "Unknown `#{type}` in $colors.";
+    @return null;
+}
+
+@function is-color-light($color) {
+    @if (lightness($color) > 60) {
+        @return true;
+    }
+    @else {
+        @return false;
+    }
+}
+
+@function is-color-dark($color) {
+    @if (lightness($color) < 60) {
+        @return true;
+    }
+    @else {
+        @return false;
+    }
+}
+
+@function shade($color, $percent) {
+    @return mix(black, $color, $percent);
+}
+
+@function tint($color, $percent) {
+    @return mix(white, $color, $percent);
+}
+
+@function em($pixels, $context: $base-font) {
+    @return #{$pixels/$context}em;
+}
+
+@function map-has-keys($map, $keys...) {
+    @each $key in $keys {
+        @if not map-has-key($map, $key) {
+            @return false;
+        }
+    }
+    @return true;
+}
+
+@function map-has-nested-keys($map, $keys...) {
+    @each $key in $keys {
+        @if not map-has-key($map, $key) {
+            @return false;
+        }
+        $map: map-get($map, $key);
+    }
+    @return true;
+}
+
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
