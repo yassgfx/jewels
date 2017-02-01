@@ -1,3 +1,21 @@
 .c-btn {
     display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    background-color: $button-color;
+    border-radius: 0;
+    transition: background-color 0.1s;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    &:hover,
+    &:focus {
+        background-color: shade($button-color, 15%);
+        @if is-color-light($button-color) {
+            color: #000000;
+        }
+        @else {
+            color: #ffffff;
+        }
+    }
 }

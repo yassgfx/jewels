@@ -6,4 +6,8 @@ $blue: ( base: #2196f3, light-400: #42a5f5, light-300: #64b5f6, light-200: #90ca
 $light-blue: ( base: #03a9f4, light-400: #29b6f6, light-300: #4fc3f7, light-200: #81d4fa, light-100: #b3e5fc, light-50: #e1f5fe, dark-600: #039be5, dark-700: #0288d1, dark-800: #0277bd, dark-900: #01579b, );
 $cyan: ( base: #00bcd4, light-400: #26c6da, light-300: #4dd0e1, light-200: #80deea, light-100: #b2ebf2, light-50: #e0f7fa, dark-600: #00acc1, dark-700: #0097a7, dark-800: #00838f, dark-900: #006064, );
 $teal: ( base: #009688, light-400: #26a69a, light-300: #4db6ac, light-200: #80cbc4, light-100: #b2dfdb, light-50: #e0f2f1, dark-600: #00897b, dark-700: #00796b, dark-800: #00695c, dark-900: #004d40, );
-$colors: ( red: $red, pink: $pink, purple: $purple, indigo: $indigo, blue: $blue, light-blue: $light-blue, cyan: $cyan, teal: $teal);
+$green: ( base: #4caf50, light-400: #66bb6a, light-300: #81c784, light-200: #a5d6a7, light-100: #c8e6c9, light-50: #e8f5e9, dark-600: #43a047, dark-700: #388e3c, dark-800: #2e7d32, dark-900: #1b5e20, );
+$yellow: ( base: #ffc107, light-400: #ffca28, light-300: #ffd54f, light-200: #ffe082, light-100: #ffecb3, light-50: #fff8e1, dark-600: #ffb300, dark-700: #ffa000, dark-800: #ff8f00, dark-900: #ff6f00, );
+$orange: ( base: #ff9800, light-400: #ffa726, light-300: #ffb74d, light-200: #ffcc80, light-100: #ffe0b2, light-50: #fff3e0, dark-600: #fb8c00, dark-700: #f57c00, dark-800: #ef6c00, dark-900: #e65100, );
+$grey: ( base: #9e9e9e, light-400: #bdbdbd, light-300: #e0e0e0, light-200: #eeeeee, light-100: #f5f5f5, light-50: #fafafa, dark-600: #757575, dark-700: #616161, dark-800: #424242, dark-900: #212121, );
+$colors: ( red: $red, pink: $pink, purple: $purple, indigo: $indigo, blue: $blue, light-blue: $light-blue, cyan: $cyan, teal: $teal, green: $green, yellow: $yellow, orabge: $orange, grey: $grey);
