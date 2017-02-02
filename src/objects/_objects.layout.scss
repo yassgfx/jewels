@@ -1,0 +1,15 @@
+.o-layout {
+    margin: 0;
+    padding: 0;
+}
+
+.o-container {
+    width: 100%;
+    margin: 0 auto;
+    @each $type,
+    $container in map-get($containers, types) {
+        @include mq($container) {
+            max-width: $container;
+        }
+    }
+}

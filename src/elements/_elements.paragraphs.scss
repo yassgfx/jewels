@@ -1,14 +1,5 @@
 p {
     line-height: 1.2;
-    margin-bottom: em(8);
+    margin-bottom: em(9);
     font-size: $base-font + px;
-}
-
-.p {
-    &-xsmall {
-        font-size: $paragraph-xsmall;
-    }
-    &-small {
-        font-size: $paragraph-small;
-    }
 }

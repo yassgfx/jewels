@@ -1,0 +1,34 @@
+.o-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+}
+
+.o-col {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    padding: 0 5px;
+    /* for each loop through column maps to get sizes */
+    @each $type,
+    $column in map-get($columns, types) {
+        &--#{$type} {
+            max-width: $column;
+            flex-basis: $column;
+            padding: 0 5px;
+        }
+        @each $type2,
+        $container in map-get($containers, types) {
+            @include mq($container) {
+                &--#{$type}-#{$type2} {
+                    max-width: $column;
+                    flex-basis: $column;
+                    padding: 0 5px;
+                }
+            }
+        }
+        &--offset-#{$type} {
+            margin-left: $column;
+        }
+    }
+}
