@@ -10,36 +10,36 @@ h6 {
 
 h1 {
     font-size: $heading1-font;
-    margin-bottom: em(10);
+    margin-bottom: em($base-font-size - 7);
     font-weight: $font-weight-extra-light;
 }
 
 h2 {
     font-size: $heading2-font;
-    margin-bottom: em(10);
+    margin-bottom: em($base-font-size - 7);
     font-weight: $font-weight-light;
 }
 
 h3 {
     font-size: $heading3-font;
-    margin-bottom: em(10);
+    margin-bottom: em($base-font-size - 7);
     font-weight: $font-weight-base;
 }
 
 h4 {
     font-size: $heading4-font;
-    margin-bottom: em(10);
+    margin-bottom: em($base-font-size - 7);
     font-weight: $font-weight-bold;
 }
 
 h5 {
     font-size: $heading5-font;
-    margin-bottom: em(10);
+    margin-bottom: em($base-font-size - 7);
     font-weight: $font-weight-extra-bold;
 }
 
 h6 {
     font-size: $heading6-font;
-    margin-bottom: em(10);
+    margin-bottom: em($base-font-size - 7);
     font-weight: $font-weight-extra-bold;
 }

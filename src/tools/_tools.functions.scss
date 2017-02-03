@@ -35,7 +35,7 @@
     @return mix(white, $color, $percent);
 }
 
-@function em($pixels, $context: $base-font) {
+@function em($pixels, $context: $base-font-size) {
     @return #{$pixels/$context}em;
 }
 
@@ -63,4 +63,21 @@
         $map: map-get($map, $key);
     }
     @return $map;
+}
+
+@function top-shadow($depth) {
+    $primary-offset: nth(1.5 3 10 14 19, $depth) * 1px;
+    $blur: nth(1.5 3 10 14 19, $depth) * 4px;
+    $color: rgba(black, nth(.02 .06 .09 .15 .20, $depth));
+    @return 0 $primary-offset $blur $color;
+}
+
+/// Computes a bottom-shadow for a card effect.
+/// @param {Number} $depth - depth level
+/// @return {List}
+@function bottom-shadow($depth) {
+    $primary-offset: nth(1.5 3 6 10 15, $depth) * 1px;
+    $blur: nth(1 3 3 5 6, $depth) * 4px;
+    $color: rgba(black, nth(.14 .13 .13 .12 .12, $depth));
+    @return 0 $primary-offset $blur $color;
 }

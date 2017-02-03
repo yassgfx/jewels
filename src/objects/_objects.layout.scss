@@ -6,6 +6,7 @@
 .o-container {
     width: 100%;
     margin: 0 auto;
+    padding: $o-container-padding;
     @each $type,
     $container in map-get($containers, types) {
         @include mq($container) {

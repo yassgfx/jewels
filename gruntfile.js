@@ -20,8 +20,7 @@
                 },
                 dist: {
                     files: [
-                        { expand: true, cwd: 'tmp', src: ['*.*'], dest: 'dist/' },
-                        { expand: true, cwd: 'src', src: ['**/*.scss', '!main.scss'], dest: 'dist/sass/', }
+                        { expand: true, cwd: 'src', src: ['**/*.scss', '!jewels.scss'], dest: 'dist/sass/', }
                     ]
                 }
             },
@@ -93,7 +92,7 @@
                     browsers: ['last 2 versions', 'ie >= 11']
                 },
                 tmp: {
-                    src: 'tmp/**/*.css'
+                    src: 'tmp/jewels.css'
                 }
             },
             version: {
@@ -108,6 +107,13 @@
                 options: {
                     configFile: '.sass-lint.yml'
                 },
+                html: {
+                    src: ['src/**/*.scss'],
+                    options: {
+                        outputFile: 'sass-lint.html',
+                        formatter: 'html'
+                    }
+                },
                 console: {
                     src: ['src/**/*.scss']
                 }
@@ -119,6 +125,12 @@
                 lab: {
                     files: ['src/**', 'lab/**'],
                     tasks: ['clean', 'copy:tmp', 'sass', 'autoprefixer']
+                }
+            },
+            cssmin: {
+                dist: {
+                    src: 'dist/jewels.css',
+                    dest: 'dist/jewels.min.css'
                 }
             },
             express: {

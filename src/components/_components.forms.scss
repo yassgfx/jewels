@@ -1,0 +1,27 @@
+.c-input {
+    display: block;
+    width: 100%;
+    padding: em($base-font-size - ($base-font-size / 2));
+    font-size: em($base-font-size);
+    line-height: 1.25;
+    color: color(gray, dark-700);
+    font-family: inherit;
+    border: 1px solid color(gray, dark-600);
+}
+
+.c-select {}
+
+.c-textarea {
+    display: block;
+    width: 100%;
+    padding: em($base-font-size - ($base-font-size / 2));
+    font-size: em($base-font-size);
+    line-height: 1.25;
+    color: color(gray, dark-700);
+    font-family: inherit;
+    border: 1px solid color(gray, dark-600);
+}
+
+.c-radio {}
+
+.c-checkbox {}

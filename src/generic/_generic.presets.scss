@@ -1,0 +1,13 @@
+html {
+    color: #000000;
+    font-family: $font-family; // How are we going to handle font stacks?
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-size: $base-font-size;
+    line-height: 1;
+}
+
+body {
+    font-size: $base-font-size;
+    background: $content-background;
+}
