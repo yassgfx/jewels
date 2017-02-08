@@ -6,9 +6,6 @@ rules:
   no-trailing-whitespace: 0
   final-newline: 0
   property-sort-order: 0
-   nesting-depth:
-    - 1
-    - max-depth: 4
   class-name-format:
     - 1
     -

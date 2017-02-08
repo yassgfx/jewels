@@ -60,23 +60,6 @@
                     dest: 'tmp/jewels.min.js'
                 }
             },
-            cssmin: {
-                tmp: {
-                    src: 'tmp/jewels.css',
-                    dest: 'tmp/jewels.min.css'
-                }
-            },
-            htmlmin: {
-                options: {
-                    removeComments: false,
-                    collapseWhitespace: true
-                },
-                tmp: {
-                    files: [
-                        { expand: true, src: 'tmp/**/*.html', dest: './' }
-                    ]
-                }
-            },
             sass: {
                 options: {
                     outputStyle: 'expanded'
@@ -106,13 +89,6 @@
             sasslint: {
                 options: {
                     configFile: '.sass-lint.yml'
-                },
-                html: {
-                    src: ['src/**/*.scss'],
-                    options: {
-                        outputFile: 'sass-lint.html',
-                        formatter: 'html'
-                    }
                 },
                 console: {
                     src: ['src/**/*.scss']
@@ -182,7 +158,7 @@
         grunt.registerTask('test', function() {});
         grunt.registerTask('lab', ['clean', 'copy:tmp', 'sass', 'autoprefixer', 'express', 'watch']);
         //build
-        grunt.registerTask('build', ['clean', 'jshint', 'sasslint', 'copy:tmp', 'sass', 'autoprefixer', 'htmlmin', 'replace', 'concat', 'uglify', 'cssmin', 'copy:dist', 'clean:tmp']);
+        grunt.registerTask('build', ['clean', 'jshint', 'sasslint', 'copy:tmp', 'sass', 'autoprefixer', 'replace', 'concat', 'uglify', 'cssmin', 'copy:dist', 'clean:tmp']);
         //release
         grunt.registerTask('publish', ['readpkg', 'build', 'gitadd', 'gitcommit', 'gittag', 'gitpush']);
         grunt.registerTask('release', ['release:patch']);
