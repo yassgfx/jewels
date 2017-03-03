@@ -29,9 +29,12 @@
                     banner: '<%= banner %>',
                     stripBanners: true
                 },
+                dist: {
+                    src: ['tmp/jewels.css'],
+                    dest: 'dist/jewels.css'
+                },
                 tmp: {
                     files: {
-                        'tmp/jewels.js': ['tmp/**/*.js'],
                         'tmp/jewels.css': ['tmp/**/*.css']
                     }
                 }
@@ -49,15 +52,6 @@
                     files: [
                         { expand: true, src: 'tmp/**/*.js', dest: './' }
                     ]
-                }
-            },
-            uglify: {
-                options: {
-                    banner: '<%= banner %>'
-                },
-                tmp: {
-                    src: 'tmp/jewels.js',
-                    dest: 'tmp/jewels.min.js'
                 }
             },
             sass: {
@@ -158,7 +152,7 @@
         grunt.registerTask('test', function() {});
         grunt.registerTask('lab', ['clean', 'copy:tmp', 'sass', 'autoprefixer', 'express', 'watch']);
         //build
-        grunt.registerTask('build', ['clean', 'jshint', 'sasslint', 'copy:tmp', 'sass', 'autoprefixer', 'replace', 'concat', 'uglify', 'cssmin', 'copy:dist', 'clean:tmp']);
+        grunt.registerTask('build', ['clean', 'jshint', 'sasslint', 'copy:tmp', 'sass', 'autoprefixer', 'replace', 'concat', 'cssmin', 'copy:dist', 'clean:tmp']);
         //release
         grunt.registerTask('publish', ['readpkg', 'build', 'gitadd', 'gitcommit', 'gittag', 'gitpush']);
         grunt.registerTask('release', ['release:patch']);

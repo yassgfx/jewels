@@ -60,10 +60,11 @@ $c-breadcrumb-active: color(gray, dark-700) !default;
 
 /* Form Settings */
 
-$input-border-color: color(gray, light-200) !default;
-$checkbox-fill-color: $brand-color !default;
-$radio-fill-color: $brand-color !default;
+$c-label-color: color(gray, dark-800);
+$c-input-border-color: color(gray, light-200) !default;
+$c-checkbox-fill-color: $brand-color !default;
+$c-radio-fill-color: $brand-color !default;
 
 /* Navigation */
 
-$navigation-link-color: $link-color !default;
+$c-navigation-link-color: $link-color !default;

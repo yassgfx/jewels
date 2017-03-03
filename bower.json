@@ -8,8 +8,6 @@
         "type": "git",
         "url": "https://github.com/JewelsCss/jewels"
     },
-    "dependencies": {
-        "jquery": "*"
-    },
+    "dependencies": {},
     "devDependencies": {}
 }
