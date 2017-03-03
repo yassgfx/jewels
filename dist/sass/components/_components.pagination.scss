@@ -1,0 +1,42 @@
+/*------------------------------------*\
+  #PAGINATION-COMPONENT
+\*------------------------------------*/
+
+.c-pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+.c-pagination--item {
+    padding: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    text-align: center;
+    border-bottom: 2px solid color(gray, light-200);
+    svg {
+        fill: $link-color;
+    }
+    &:hover {
+        background-color: color(gray, light-200);
+        color: shade($link-color, 20%);
+        svg {
+            fill: shade($link-color, 20%);
+        }
+    }
+    &.is-active {
+        background-color: color(gray, light-200);
+    }
+    &.is-disabled {
+        color: color(gray, light-400);
+        pointer-events: none;
+        svg {
+            fill: color(gray, light-400);
+        }
+        &:hover {
+            background: transparent;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+/*------------------------------------*\
+  #PARAGRAPH-ELEMENTS
+\*------------------------------------*/
+
+p {
+    line-height: 1.25;
+    margin-bottom: em($base-font-size - 5);
+    font-size: $base-font-size + px;
+}

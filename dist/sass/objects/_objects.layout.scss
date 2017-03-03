@@ -1,0 +1,35 @@
+/*------------------------------------*\
+  #LAYOUT-OBJECT
+\*------------------------------------*/
+
+.o-layout {
+    margin: 0;
+    padding: 0;
+}
+
+.o-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: $o-container-padding;
+    @each $type,
+    $container in map-get($containers, types) {
+        @include mq($container) {
+            max-width: $container;
+        }
+    }
+}
+
+.o-header {
+    margin: 0;
+    padding: 0;
+}
+
+.o-footer {
+    margin: 0;
+    padding: 0;
+}
+
+.o-main {
+    margin: 0;
+    padding: 0;
+}

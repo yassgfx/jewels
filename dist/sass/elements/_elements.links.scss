@@ -1,0 +1,12 @@
+/*------------------------------------*\
+  #LINK-ELEMENTS
+\*------------------------------------*/
+
+a {
+    text-decoration: none;
+    color: $link-color;
+    &:hover,
+    &:focus {
+        color: $link-color-hover;
+    }
+}

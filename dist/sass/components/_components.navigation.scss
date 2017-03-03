@@ -1,0 +1,16 @@
+/*------------------------------------*\
+  #NAVIGATION-COMPONENT
+\*------------------------------------*/
+
+.c-navigation {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.c-navigation--link {
+    display: block;
+    padding: .5em 1em;
+    color: $c-navigation-link-color;
+}
