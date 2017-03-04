@@ -1,9 +1,9 @@
-# [Jewels](https://jewelscss.com.com)
+# [Jewels](http://jewelscss.com)
 
 
 Jewels is a modern HTML, CSS, and JavaScript framework built for front end developers. Fast and light weight and ready for you to customize. No bulk, no fuss. Just simple code. Built using SCSS, BEM, and ITCSS.
 
-To get started, check out <https://jewelscss.com.com>!
+To get started, check out <http://jewelscss.com>!
 
 ## Table of contents
 
