@@ -68,3 +68,10 @@ $c-radio-fill-color: $brand-color !default;
 /* Navigation */
 
 $c-navigation-link-color: $link-color !default;
+
+/* Messages */
+
+$error-color: color(red, base) !default;
+$success-color: color(green, base) !default;
+$warning-color: color(yellow, base) !default;
+$caution-color: color(orange, base) !default;
